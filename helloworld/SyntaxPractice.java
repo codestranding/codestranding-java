@@ -108,7 +108,7 @@ public class SyntaxPractice{
                 System.out.println("your name doesnt contains spaces ");
             }
 
-            int legnth = name.length();
+            int length = name.length();
             char letter = name.charAt(0);
             int index = name.indexOf("o");
             int lastIndex = name.lastIndexOf("a");
@@ -119,13 +119,13 @@ public class SyntaxPractice{
             name = name.trim();
             name = name.replace("o", "0");
 
-            System.out.println(legnth);
+            System.out.println(length);
             System.out.println(letter);
             System.out.println(index);
             System.out.println(lastIndex);
             System.out.println(name);
             
-           if (name.equalsIgnorCase("password")) {
+           if (name.equalsIgnoreCase("password")) {
             System.out.println("cannot be passowrd");
            }else{
             System.out.println("hello "+name);
@@ -178,9 +178,85 @@ public class SyntaxPractice{
          */
 
 
+        /*
+        && = ANd
+        || = or
+        ! = not 
+
+        boolean isSunny = false;
+        double temp = 60;//celcius 
+        if (temp <= 80 && temp >= 70 && isSunny) {
+            System.out.println("the weather is good");
+            System.out.println("the weather is B E A utiful");
+        }else if (temp <= 80 && temp >= 70 && !isSunny) {
+             System.out.println("the weather is good");
+             System.out.println("and cloudy");
+        }else if (temp >= 30 || temp <= 60 && !isSunny) {
+             System.out.println("the weather is cold");
+             System.out.println("and cloudy");
+        }
 
 
+        //username must be 4-12 char
+        //username must not have spaces or underscores
+
+        String userName;
+
+        System.out.print("Enter your new username: ");
+        userName = scanner.nextLine();
+
+        if (userName.length() < 4 || userName.length() > 12) {
+            System.out.print("New username must be 4-12 characters");
+        }else if (userName.contains(" ") || userName.contains("_")) {
+            System.out.print("New username must not contain spaces or underscores");
+        }else{
+            System.out.println("Wlcome "+userName);
+        }
+        */
+
+        /*while loop = repeat some code forever
+        while some conditions are true
+         
+        String name = "";
+        while (name.isEmpty()){
+            System.out.print("enter you name: ");
+            name = scanner.nextLine();
+        }
+        System.out.println("Hello "+ name);
+       
+        String game = "";
+        while (!game.equals("Q")){
+            System.out.println("youre in the matrix");
+            System.out.print("enter Q to quit: ");
+            game = scanner.nextLine().toUpperCase();
+        }
+        System.out.println("you have quit the game ");
+    
+
+        int age = 0;
+        System.out.println("enter your age: ");
+        age = scanner.nextInt();
+
+        while (age < 0 ){
+            System.out.println("you cannot have a negative age");
+            System.out.println("enter your age: ");
+            age = scanner.nextInt();
+        }
+            System.out.println("you are "+age+ " years old");
+         
+         int num = 0;
+         do{
+            System.out.print("enter a number between 1-10: ");
+            num = scanner.nextInt();
+        }while (num < 1 || num > 10 );
+            System.out.println("your number is "+num);
+        
+        0    */
+
+     
+     
+     
+     
         scanner.close();
     }
-
 }
