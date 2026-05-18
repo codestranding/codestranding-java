@@ -1,0 +1,17 @@
+public class VariableScope{
+
+	static int x = 3;// class no usage
+	
+	public static void main(String[] args) {
+       
+         int x = 1;//local
+
+		 System.out.println(x);
+		 doSomething();
+      
+   }
+   static void doSomething(){
+	int x = 2;// local 
+	System.out.println(x);
+   }
+} 
