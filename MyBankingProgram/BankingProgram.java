@@ -36,7 +36,10 @@ public class BankingProgram{
 				default -> System.out.println("INVALID CHOICE");
 			}
 		}
-		System.out.println("Thank you, see ya later");
+		//exit message
+		System.out.println("*****************************");
+		System.out.println("Thank you, see ya later!!!!");
+		System.out.println("*****************************");
 
 
 		scnr.close();
@@ -81,8 +84,5 @@ public class BankingProgram{
 			return amount;
 	
 	}
-
-	//exit message
-		
-	
+			
 }
