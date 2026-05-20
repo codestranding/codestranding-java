@@ -1,8 +1,7 @@
 import java.util.Random;
 import java.util.Scanner;
 
-public class DiceRoll{
-	
+public class DiceRoll{	
 	public static void main(String[] args) {
 		
 		//java dice roller program
@@ -15,7 +14,7 @@ public class DiceRoll{
 
 
 		//get the # of dice from user
-		System.out.print("enter the number of dice to roll: ");
+		System.out.print("enter the number of dice to roll(1-6): ");
 		numOfDice = scnr.nextInt();
 
 		//check if number of dice is > 0
