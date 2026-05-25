@@ -73,7 +73,7 @@ public class Array{
 
 		if (target == number[i]) {
 
-			System.out.println(target+" is found at index: "+i);
+			System.out.println(target+"was found at index: "+i);
 
 			isFound = true;
 
@@ -81,14 +81,14 @@ public class Array{
 		}
 	}
 	if (!isFound){
-		System.out.println(target+" is not found in the array");
+		System.out.println(target+" was not found in the array");
 		
 	}
 	for(int i = 0; i < fruitz.length; i++){
 
 		if (fruitz[i].equals(targetz)) {
 			
-			System.out.println(targetz+" is found at index: "+i);
+			System.out.println(targetz+" was found at index: "+i);
 
 			isFound = true;
 
@@ -96,7 +96,7 @@ public class Array{
 		}
 	}
 	if (!isFound){
-		System.out.println(targetz+" is not found in the array");
+		System.out.println(targetz+" was not found in the array");
 	}
 
 
